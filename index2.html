@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEROVA App Prototype</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="app-header">
+            <div class="icon">👤</div>
+            <div class="app-title">ZEROVA</div>
+            <div class="icon">🌟</div>
+        </header>
+
+        <main class="app-content">
+
+            <div id="page-home" class="page active">
+                <div class="welcome-message">
+                    <h2>Selamat datang, Lintang</h2>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Cari...">
+                </div>
+                <div class="history-card">
+                    <div>
+                        <strong>Riwayat Pengguna</strong>
+                        <small>Terakhir input bahan (16/08)</small>
+                    </div>
+                    <div class="icon">🔄</div>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature-card" data-page="page-edukasi">
+                        <div class="feature-icon" style="background-color: #fef3c7;">📖</div>
+                        <span>Edukasi</span>
+                    </div>
+                    <div class="feature-card" data-page="page-edible-coating">
+                        <div class="feature-icon" style="background-color: #fee2e2;">🍎</div>
+                        <span>Edible Coating</span>
+                    </div>
+                    <div class="feature-card" data-page="page-masa-simpan">
+                        <div class="feature-icon" style="background-color: #dbeafe;">⏰</div>
+                        <span>Masa Simpan</span>
+                    </div>
+                    <div class="feature-card" data-page="page-digester">
+                        <div class="feature-icon" style="background-color: #e0f2f1;">♻️</div>
+                        <span>Anaerobic Digester</span>
+                    </div>
+                    <div class="feature-card" data-page="page-chatbot">
+                        <div class="feature-icon" style="background-color: #ede9fe;">🤖</div>
+                        <span>Chatbot AI</span>
+                    </div>
+                </div>
+                
+                <div class="ai-prompt-card">
+                    <div class="ai-header">
+                        <img src="https://i.ibb.co/8Yj0ZtX/bot-icon.png" alt="Zova AI" class="ai-avatar">
+                        <div>
+                            <strong>ZOVA AI</strong>
+                            <p>Mulai chat interaktif bersama ZOVA...</p>
+                        </div>
+                    </div>
+                    <div class="quick-questions">
+                        <strong>Mulai Tanya</strong>
+                        <button class="question-btn">Apa itu edible coating dan bagaimana cara kerjanya?</button>
+                        <button class="question-btn">Apakah edible coating aman untuk semua jenis makanan?</button>
+                        <button class="question-btn">Tanya pertanyaan lainnya...</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page-edukasi" class="page">
+                <button class="btn-back">← Kembali</button>
+                <h2>Artikel Edukasi</h2>
+                <div class="article-card">
+                    <img src="https://i.ibb.co/n7mKygr/edible-coating-img.png" alt="Edible Coating">
+                    <div class="article-content">
+                        <strong>Edible Coating</strong>
+                        <p>Edible coating adalah lapisan tipis yang bisa dimakan dan melindungi makanan...</p>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <img src="https://i.ibb.co/d5W1jJz/food-waste-img.png" alt="Food Waste">
+                    <div class="article-content">
+                        <strong>Food Waste</strong>
+                        <p>Food waste adalah makanan yang terbuang dan tidak termakan, baik yang masih layak...</p>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <img src="https://i.ibb.co/SJVd1d8/digester-img.png" alt="Digester">
+                    <div class="article-content">
+                        <strong>Small Anaerobic Digester</strong>
+                        <p>Digester anaerobik skala kecil adalah reaktor yang dirancang untuk mengolah limbah...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page-edible-coating" class="page">
+                <button class="btn-back">← Kembali</button>
+                <h2>Edible Coating</h2>
+                <div class="sub-nav">
+                    <button class="sub-nav-btn active" data-tab="tab-formulasi">Formulasi</button>
+                    <button class="sub-nav-btn" data-tab="tab-alat-bahan">Alat & Bahan</button>
+                    <button class="sub-nav-btn" data-tab="tab-video">Video Tutorial</button>
+                </div>
+
+                <div id="tab-formulasi" class="tab-content active">
+                    <div class="card">
+                        <h3>Panduan Formulasi Edible Coating</h3>
+                        <strong>Persiapan bahan</strong>
+                        <ul>
+                            <li>Timbang bahan utama seperti polisakarida (pati, kitosan, alginat), protein, atau lipid.</li>
+                            <li>Siapkan plasticizer (gliserol) untuk meningkatkan fleksibilitas lapisan.</li>
+                        </ul>
+                        <strong>Pelarutan bahan dasar</strong>
+                        <ul>
+                            <li>Masukkan bahan utama ke dalam pelarut (umumnya air suling).</li>
+                            <li>Lakukan pengadukan dengan homogenizer.</li>
+                        </ul>
+                        <strong>Pemanasan</strong>
+                        <ul>
+                            <li>Panaskan larutan pada suhu tertentu (±50–70 °C) agar bahan terlarut sempurna.</li>
+                            <li>Hindari suhu terlalu tinggi untuk mencegah degradasi.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="tab-alat-bahan" class="tab-content">
+                    <div class="icon-grid">
+                        <div class="icon-card">
+                            <img src="https://i.ibb.co/sK0nB6B/alat.png" alt="Alat">
+                            <span>Alat</span>
+                        </div>
+                        <div class="icon-card">
+                            <img src="https://i.ibb.co/3kXyvF3/bahan-utama.png" alt="Bahan Utama">
+                            <span>Bahan Utama</span>
+                        </div>
+                        <div class="icon-card">
+                            <img src="https://i.ibb.co/K24YJ8L/plasticizer.png" alt="Plasticizer">
+                            <span>Plasticizer</span>
+                        </div>
+                        <div class="icon-card">
+                            <img src="https://i.ibb.co/M6Y5f25/bahan-kimia.png" alt="Bahan Kimia">
+                            <span>Bahan Kimia Tambahan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-video" class="tab-content">
+                    <div class="card">
+                        <h3>Video Tutorial Formulasi</h3>
+                        <div class="video-placeholder">
+                            <img src="https://i.ibb.co/VqCgTqK/video-thumb.png" alt="Video tutorial">
+                            <div class="play-button">▶</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page-masa-simpan" class="page">
+                <button class="btn-back">← Kembali</button>
+                <h2>Prediksi Masa Simpan Pangan</h2>
+                <div class="card">
+                    <div class="input-group">
+                        <span>➕</span>
+                        <input type="text" placeholder="masukkan jenis makanan">
+                    </div>
+                    <div class="input-group">
+                        <span>➕</span>
+                        <input type="text" placeholder="masukkan tanggal pengaplikasian">
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <strong>KLASIFIKASI STATUS KESEGARAN</strong>
+                    <div class="status-emojis">
+                        <span>😉</span>
+                        <span>😮</span>
+                        <span>🤯</span>
+                    </div>
+                </div>
+                
+                <div class_bottom_cards>
+                    <div class="card quote-card">
+                        <p>"Mencegah busuk lebih baik daripada membuang sia-sia"</p>
+                    </div>
+                    <div class="card result-card">
+                        <small>ESTIMASI MASA SIMPAN</small>
+                        <div class="result-days">5</div>
+                        <span>hari</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page-digester" class="page">
+                <button class="btn-back">← Kembali</button>
+                <h2>Mesin Digester Skala Kecil</h2>
+                
+                <div class="card">
+                    <strong>STATUS DIGESTER</strong>
+                    <div class="status-bubbles">
+                        <div class="status-bubble normal">Normal</div>
+                        <div class="status-bubble waspada">Waspada</div>
+                        <div class="status-bubble butuh">Butuh Tindakan</div>
+                    </div>
+                </div>
+                
+                <div class="reminder-card">
+                    <div>
+                        <strong>REMINDER</strong>
+                        <p>Masukkan bahan-bahan ke dalam mesin dalam <strong>2 Hari</strong></p>
+                    </div>
+                    <div class="icon">‼️</div>
+                </div>
+
+                <div class_bottom_cards>
+                    <div class="card input-harian-card">
+                        <small>Input harian</small>
+                        <div class="input-icon">🍎</div>
+                        <span>150 gram apel</span>
+                    </div>
+                    <div class="card laporan-harian-card">
+                        <small>Laporan harian</small>
+                        <ul>
+                            <li>Biogas: ±6,5 liter</li>
+                            <li>Energi: ±0,14 MJ</li>
+                            <li>Pupuk: ±120 g</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page-chatbot" class="page">
+                <button class="btn-back">← Kembali</button>
+                <div class="chat-header">
+                    <img src="https://i.ibb.co/8Yj0ZtX/bot-icon.png" alt="Zova AI" class="ai-avatar">
+                    <strong>ZOVA AI</strong>
+                </div>
+                <div class="chat-window">
+                    <div class="chat-bubble bot">
+                        Hai Lintang, saya ZOVA, bot layanan pelanggan Anda. Ada yang bisa saya bantu hari ini?
+                    </div>
+                    <div class="chat-bubble user">
+                        Halo ZOVA, saya ada masalah tentang edible coating. Bisa bantu?
+                    </div>
+                    <div class="chat-bubble bot">
+                        Bisakah Anda ceritakan lebih lanjut tentang masalahnya?
+                    </div>
+                    <div class="chat-bubble user">
+                        Bisakah saya mendapatkan rekomendasi bahan edible coating yang alami?
+                    </div>
+                    <div class="chat-bubble bot">
+                        Tentu! Beberapa bahan edible coating alami yang sering digunakan antara lain:
+                        <ul>
+                            <li>- Protein (seperti whey protein, kasein, atau gelatin)</li>
+                            <li>- Polisakarida (seperti pati, gum arab, karagenan)</li>
+                            <li>- Lipid alami (seperti lilin lebah atau minyak nabati)</li>
+                        </ul>
+                        Bahan-bahan ini aman dimakan dan sering digunakan.
+                    </div>
+                </div>
+                <div class="chat-input-bar">
+                    <span>🙂</span>
+                    <input type="text" id="chat-input" placeholder="Ketik Pesan">
+                    <button id="send-chat-btn">➤</button>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
